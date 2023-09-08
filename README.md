@@ -1,15 +1,7 @@
-# MiniGPT-4: Enhancing Vision-language Understanding with Advanced Large Language Models
+# Vision-Controllable Natural Language Generation
 [Deyao Zhu](https://tsutikgiau.github.io/)*  , [Jun Chen](https://junchen14.github.io/)* (On Job Market!), [Xiaoqian Shen](https://xiaoqian-shen.github.io), [Xiang Li](https://xiangli.ac.cn), and [Mohamed Elhoseiny](https://www.mohamed-elhoseiny.com/). *Equal Contribution
 
 **King Abdullah University of Science and Technology**
-
-<a href='https://minigpt-4.github.io'><img src='https://img.shields.io/badge/Project-Page-Green'></a>  <a href='https://arxiv.org/abs/2304.10592'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://huggingface.co/spaces/Vision-CAIR/minigpt4'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue'></a> <a href='https://huggingface.co/Vision-CAIR/MiniGPT-4'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue'></a> [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OK4kYsZphwt5DXchKkzMBjYF6jnkqh4R?usp=sharing) [![YouTube](https://badges.aleen42.com/src/youtube.svg)](https://www.youtube.com/watch?v=__tftoxpBAw&feature=youtu.be)
-
-## 💡 Get help - [Q&A](https://github.com/Vision-CAIR/MiniGPT-4/discussions/categories/q-a) or [Discord 💬](https://discord.gg/5WdJkjbAeE)
-
-
-## News
-We now provide a llama 2 version of MiniGPT-4
 
 
 ## Online Demo
@@ -21,8 +13,9 @@ Click the image to chat with MiniGPT-4 around your images
 ## Examples
   |   |   |
 :-------------------------:|:-------------------------:
-![find wild](figs/examples/wop_2.png) |  ![write story](figs/examples/ad_2.png)
-![solve problem](figs/examples/fix_1.png)  |  ![write Poem](figs/examples/rhyme_1.png)
+![example1](figs/exp1.png) |  ![example2](figs/exp2.png)
+![example3](figs/exp3.png)  |  ![example4](figs/exp4.png)
+![example5](figs/exp5.png)  |  ![example6](figs/exp6.png)
 
 More examples can be found in the [project page](https://minigpt-4.github.io).
 

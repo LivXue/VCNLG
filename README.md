@@ -32,7 +32,7 @@
 Git clone our repository, creating a python environment and activate it via the following command
 
 ```bash
-git clone https://github.com/Vision-CAIR/MiniGPT-4.git
+git clone https://github.com/LivXue/VCNLG.git
 cd MiniGPT-4
 conda env create -f environment.yml
 conda activate minigpt4

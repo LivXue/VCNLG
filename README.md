@@ -1,4 +1,5 @@
 # Vision-Controllable Natural Language Generation
+# (Updating)
 [Dizhan Xue](https://scholar.google.com/citations?user=V5Aeh_oAAAAJ), [Shengsheng Qian](https://scholar.google.com/citations?user=bPX5POgAAAAJ), and [Changsheng Xu](https://scholar.google.com/citations?user=hI9NRDkAAAAJ).
 
 **MAIS, Institute of Automation, Chinese Academy of Sciences**
@@ -16,14 +17,11 @@
 
 
 ## Introduction
-- MiniGPT-4 aligns a frozen visual encoder from BLIP-2 with a frozen LLM, Vicuna, using just one projection layer. 
-- We train MiniGPT-4 with two stages. The first traditional pretraining stage is trained using roughly 5 million aligned image-text pairs in 10 hours using 4 A100s. After the first stage, Vicuna is able to understand the image. But the generation ability of Vicuna is heavily impacted.
-- To address this issue and improve usability, we propose a novel way to create high-quality image-text pairs by the model itself and ChatGPT together. Based on this, we then create a small (3500 pairs in total) yet high-quality dataset.
-- The second finetuning stage is trained on this dataset in a conversation template to significantly improve its generation reliability and overall usability. To our surprise, this stage is computationally efficient and takes only around 7 minutes with a single A100.
-- MiniGPT-4 yields many emerging vision-language capabilities similar to those demonstrated in GPT-4. 
+- VCNLG aims to continue natural language generation (NLG) following a peceived visual control. 
+- VCLM aligns a frozen vsiual encoder from BLIP, a frozen textual encoder BERT, and a trained-from-scratch or pretrained language model (LM).
 
 
-![overview](figs/overview.png)
+![overview](figs/framework.png)
 
 
 ## Getting Started

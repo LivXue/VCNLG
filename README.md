@@ -16,6 +16,7 @@ Click the image to chat with MiniGPT-4 around your images
 ![example1](figs/exp1.PNG) |  ![example2](figs/exp2.PNG)
 ![example3](figs/exp3.PNG)  |  ![example4](figs/exp4.PNG)
 ![example5](figs/exp5.PNG)  |  ![example6](figs/exp6.PNG)
+![example7](figs/exp7.PNG)  |  ![example8](figs/exp8.PNG)
 
 More examples can be found in the [project page](https://minigpt-4.github.io).
 

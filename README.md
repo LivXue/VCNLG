@@ -1,13 +1,8 @@
 # Vision-Controllable Natural Language Generation
-[Deyao Zhu](https://tsutikgiau.github.io/)*  , [Jun Chen](https://junchen14.github.io/)* (On Job Market!), [Xiaoqian Shen](https://xiaoqian-shen.github.io), [Xiang Li](https://xiangli.ac.cn), and [Mohamed Elhoseiny](https://www.mohamed-elhoseiny.com/). *Equal Contribution
+[Dizhan Xue](https://scholar.google.com/citations?user=V5Aeh_oAAAAJ), [Shengsheng Qian](https://scholar.google.com/citations?user=bPX5POgAAAAJ), and [Changsheng Xu](https://scholar.google.com/citations?user=hI9NRDkAAAAJ).
 
-**King Abdullah University of Science and Technology**
+**MAIS, Institute of Automation, Chinese Academy of Sciences**
 
-
-## Online Demo
-
-Click the image to chat with MiniGPT-4 around your images
-[![demo](figs/online_demo.png)](https://minigpt-4.github.io)
 
 
 ## Examples
@@ -17,8 +12,6 @@ Click the image to chat with MiniGPT-4 around your images
 ![example3](figs/exp3.PNG)  |  ![example4](figs/exp4.PNG)
 ![example5](figs/exp5.PNG)  |  ![example6](figs/exp6.PNG)
 ![example7](figs/exp7.PNG)  |  ![example8](figs/exp8.PNG)
-
-More examples can be found in the [project page](https://minigpt-4.github.io).
 
 
 

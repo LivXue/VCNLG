@@ -49,7 +49,7 @@ We adopt ViT pretrained by [BLIP](https://github.com/salesforce/BLIP) to extract
 
 ### VIST-E [[Link]](https://visionandlanguage.net/VIST/dataset.html)
 
-Download *SIS-with-labels.tar.gz*, *train_split.(0-12).tar.gz*, *val_images.tar.gz*, *test_images.tar.gz*  and unzip them in `data/VIST-E`. 
+Download *SIS-with-labels.tar.gz*, *train_split.(0-12).tar.gz*, *val_images.tar.gz*, *test_images.tar.gz*  and unzip them into `data/VIST-E`. 
 
 __Note:__ There should be *train.story-in-sequence.json*, *train.story-in-sequence.json* in `data/VIST-E/` and *image_id.jpg/png* in `data/VIST-E/images/`.
 
@@ -80,7 +80,7 @@ __Note:__ There should be *story_train.json*, *story_val.json*, *story_test.json
 
 ### LSMDC-E [[Link]](https://sites.google.com/site/describingmovies/home) 
 
-Download LSMDC 2021 version (*task1_2021.zip*, *MPIIMD_downloadLinks.txt*, *MVADaligned_downloadLinks.txt*) and unzip then into `data/LSMDC-E`. 
+Download LSMDC 2021 version (*task1_2021.zip*, *MPIIMD_downloadLinks.txt*, *MVADaligned_downloadLinks.txt*) and unzip them into `data/LSMDC-E`. 
 
 __NOTE__: Due to LSMDC agreement, we cannot share data to any third-party.
 

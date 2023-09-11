@@ -19,7 +19,7 @@
 
 
 ## Introduction
-- Vision-Controllable Natural Language Generation （VCNLG） aims to continue natural language generation (NLG) following a peceived visual control. 
+- Vision-Controllable Natural Language Generation (VCNLG) aims to continue natural language generation (NLG) following a peceived visual control. 
 - Vision-Controllable Language Model (VCLM) aligns a frozen vsiual encoder from BLIP, a frozen textual encoder BERT, and a trained-from-scratch or pretrained generative language model (LM).
 - VCLM adopt a (optional) multimodal-contextual cloud knowledge retrieval to improve edge computing AI when additional knowledge is needed.
 - VCLM adopt vision-controlled reinforcement learning to constrain the trained model to follow visual controls.
@@ -29,7 +29,6 @@
 
 
 ## Getting Started
-### Installation
 
 **1. Prepare the code and the environment**
 

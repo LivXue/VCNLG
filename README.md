@@ -1,10 +1,10 @@
 # Vision-Controllable Natural Language Generation
-# (Updating)
+
 [Dizhan Xue](https://scholar.google.com/citations?user=V5Aeh_oAAAAJ), [Shengsheng Qian](https://scholar.google.com/citations?user=bPX5POgAAAAJ), and [Changsheng Xu](https://scholar.google.com/citations?user=hI9NRDkAAAAJ).
 
 **MAIS, Institute of Automation, Chinese Academy of Sciences**
 
-
+![](https://img.shields.io/badge/Status-building-brightgreen)
 
 ## Examples
   |   |   |
@@ -17,8 +17,9 @@
 
 
 ## Introduction
-- VCNLG aims to continue natural language generation (NLG) following a peceived visual control. 
-- VCLM aligns a frozen vsiual encoder from BLIP, a frozen textual encoder BERT, and a trained-from-scratch or pretrained language model (LM).
+- Vision-Controllable Natural Language Generation （VCNLG） aims to continue natural language generation (NLG) following a peceived visual control. 
+- Vision-Controllable Language Model (VCLM) aligns a frozen vsiual encoder from BLIP, a frozen textual encoder BERT, and a trained-from-scratch or pretrained generative language model (LM).
+- VCLM
 
 
 ![overview](figs/framework.png)

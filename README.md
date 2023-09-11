@@ -5,6 +5,8 @@
 **MAIS, Institute of Automation, Chinese Academy of Sciences**
 
 ![](https://img.shields.io/badge/Status-building-brightgreen)
+![GitHub stars](https://img.shields.io/github/stars/LivXue/VCNLG?color=yellow&label=Stars)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FLivXue%2FVCNLG&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 ## Examples
   |   |   |
@@ -19,7 +21,8 @@
 ## Introduction
 - Vision-Controllable Natural Language Generation （VCNLG） aims to continue natural language generation (NLG) following a peceived visual control. 
 - Vision-Controllable Language Model (VCLM) aligns a frozen vsiual encoder from BLIP, a frozen textual encoder BERT, and a trained-from-scratch or pretrained generative language model (LM).
-- VCLM
+- VCLM adopt a (optional) multimodal-contextual cloud knowledge retrieval to improve edge computing AI when additional knowledge is needed.
+- VCLM adopt vision-controlled reinforcement learning to constrain the trained model to follow visual controls.
 
 
 ![overview](figs/framework.png)
@@ -34,26 +37,29 @@ Git clone our repository, creating a python environment and activate it via the 
 
 ```bash
 git clone https://github.com/LivXue/VCNLG.git
-cd MiniGPT-4
+cd VCNLG
 conda env create -f environment.yml
-conda activate minigpt4
+conda activate vcnlg
 ```
 
 
-**2. Prepare the pretrained LLM weights**
+**2. Prepare the visual features**
 
-Currently, we provide both Vicuna V0 and Llama 2 version of MiniGPT-4.
-Download the corresponding LLM weights from the following huggingface space via clone the repository using git-lfs.
+We adopt ViT pretrained by [BLIP](https://github.com/salesforce/BLIP) to extract visual features. Download the [weights](https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_large.pth) of BLIP w/ ViT-L and save the file to `visual_feature_extraction/checkpoints/model_large.pth`
 
-|                                          Vicuna V0 13B                                           |                                          Vicuna V0 7B                                          |                            Llama 2 Chat 7B                             |
-:------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------:
- [Downlad](https://huggingface.co/Vision-CAIR/vicuna/tree/main) | [Download](https://huggingface.co/Vision-CAIR/vicuna-7b/tree/main) | [Download](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/tree/main)
+Then, run
 
+```bash
+python visual_feature_extraction/extract_fea_img.py --input_dir <your image directory> --output_dir <your ViT feature directory> --device <your device>
+```
+to extract the ViT features of images.
 
-Then, set the path to the vicuna weight in the model config file 
-[here](minigpt4/configs/models/minigpt4_vicuna0.yaml#L18) at Line 18
-and/or the path to the llama2 weight in the model config file 
-[here](minigpt4/configs/models/minigpt4_llama2.yaml#L15) at Line 15.
+Or, run
+
+```bash
+python visual_feature_extraction/extract_fea_video.py --input_dir <your video frame directory> --output_dir <your ViT feature directory> --device <your device>
+```
+to extract the ViT features of video frames.
 
 **3. Prepare the pretrained MiniGPT-4 checkpoint**
 

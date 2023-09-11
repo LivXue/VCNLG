@@ -142,14 +142,13 @@ python train.py
 Coming soon...
 
 
-<div style="display:none">
-## Citation
+<!-- ## Citation
 
 If you find our work or the code useful, please consider cite our paper using:
 ```bibtex
 
 ```
-</div>
+ -->
 
 ## License
 This repository is under [BSD 3-Clause License](LICENSE.md).

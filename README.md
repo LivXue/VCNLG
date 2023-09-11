@@ -72,8 +72,8 @@ to generate the story files.
 
 Finally, run
 
-```
-python extract_clip_feature.py --input_dir data/VIST-E/images --output_dir data/VIST-E/clip_features
+```bash
+python data/VIST-E/extract_clip_feature.py --input_dir data/VIST-E/images --output_dir data/VIST-E/clip_features
 ```
 to generate clip features.
 
@@ -112,15 +112,15 @@ to generate the story files.
 
 Finally, run
 
-```
-python extract_clip_feature_video.py --input_dir data/LSMDC-E/videos --output_dir data/LSMDC-E/clip_features
+```bash
+python data/LSMDC-E/extract_clip_feature_video.py --input_dir data/LSMDC-E/videos --output_dir data/LSMDC-E/clip_features
 ```
 to generate clip features.
 
 
 **3. (Optional) Fetch Textual Knowledge**
 
-Download the code and pretrained checkpoints of [mPLUG-Owl](https://github.com/X-PLUG/mPLUG-Owl)
+Download the code and pretrained checkpoints of [mPLUG-Owl](https://github.com/X-PLUG/mPLUG-Owl).
 
 Then, run our script
 
@@ -130,21 +130,14 @@ python mPLUG-Owl test_onshot.py
 
 to retrieve knowledge for the datasets.
 
-**4. Train**
 
+## Training
 Check the configs in `utils/opts.py` and run 
 ```bash
 python train.py
 ```
 
-
-### Training
-Check the configs in `utils/opts.py` and run 
-```bash
-python train.py
-```
-
-### Launching Demo Locally
+## Launching Demo Locally
 
 Coming soon...
 

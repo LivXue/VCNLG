@@ -76,7 +76,7 @@ python data/VIST-E/extract_clip_feature.py --input_dir data/VIST-E/images --outp
 ```
 to generate clip features.
 
-__Note:__ There should be *story_train.json*, *story_val.json*, *story_test.json* in `data/VIST-E/`.
+__Note:__ There should be *story_train.json*, *story_val.json*, *story_test.json* in `data/VIST-E/`, *<image_id>.npy* in `data/VIST-E/ViT_features/`, and *<image_id>.npy* in `data/VIST-E/clip_features/`.
 
 ### LSMDC-E [[Link]](https://sites.google.com/site/describingmovies/home) 
 
@@ -116,6 +116,7 @@ python data/LSMDC-E/extract_clip_feature_video.py --input_dir data/LSMDC-E/video
 ```
 to generate clip features.
 
+__Note:__ There should be *story_train.json*, *story_val.json*, *story_test.json* in `data/LSMDC-E/`, *<video_id>.npy* in `data/LSMDC-E/ViT_features/`, and *<video_id>.npy* in `data/LSMDC-E/clip_features/`.
 
 **3. (Optional) Fetch Textual Knowledge**
 

@@ -137,7 +137,7 @@ to retrieve knowledge for the datasets.
 Check the configs in `utils/opts.py` and run 
 
 ```bash
-python train.py
+python train.py --dataset <dataset>
 ```
 
 to train the model.
@@ -145,7 +145,7 @@ to train the model.
 Then, run
 
 ```bash
-python eval.py
+python eval.py --dataset <dataset>
 ```
 
 to test the model.

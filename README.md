@@ -78,6 +78,8 @@ to generate clip features.
 
 __Note:__ There should be *story_train.json*, *story_val.json*, *story_test.json* in `data/VIST-E/`, *<image_id>.npy* in `data/VIST-E/ViT_features/`, and *<image_id>.npy* in `data/VIST-E/clip_features/`.
 
+
+
 ### LSMDC-E [[Link]](https://sites.google.com/site/describingmovies/home) 
 
 Download LSMDC 2021 version (*task1_2021.zip*, *MPIIMD_downloadLinks.txt*, *MVADaligned_downloadLinks.txt*) and unzip them into `data/LSMDC-E`. 
@@ -131,13 +133,22 @@ python mPLUG-Owl/test_onshot.py
 to retrieve knowledge for the datasets.
 
 
-## Training
+## Training and test
 Check the configs in `utils/opts.py` and run 
+
 ```bash
 python train.py
 ```
 
+to train the model.
 
+Then, run
+
+```bash
+python eval.py
+```
+
+to test the model.
 
 ## Launching Demo Locally
 

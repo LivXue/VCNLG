@@ -45,7 +45,7 @@ We adopt ViT pretrained by [BLIP](https://github.com/salesforce/BLIP) to extract
 
 
 
-**2. Construct the datasets**
+**2. Prepare the datasets**
 
 ### VIST-E [[Link]](https://visionandlanguage.net/VIST/dataset.html)
 
@@ -125,7 +125,7 @@ Download the code and pretrained checkpoints of [mPLUG-Owl](https://github.com/X
 Then, run our script
 
 ```
-python mPLUG-Owl test_onshot.py
+python mPLUG-Owl/test_onshot.py
 ```
 
 to retrieve knowledge for the datasets.
@@ -136,6 +136,8 @@ Check the configs in `utils/opts.py` and run
 ```bash
 python train.py
 ```
+
+
 
 ## Launching Demo Locally
 

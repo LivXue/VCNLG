@@ -51,7 +51,7 @@ We adopt ViT pretrained by [BLIP](https://github.com/salesforce/BLIP) to extract
 
 Download *SIS-with-labels.tar.gz*, *train_split.(0-12).tar.gz*, *val_images.tar.gz*, *test_images.tar.gz*  and unzip them into `data/VIST-E`. 
 
-__Note:__ There should be *train.story-in-sequence.json*, *train.story-in-sequence.json* in `data/VIST-E/` and *image_id.jpg/png* in `data/VIST-E/images/`.
+__Note:__ There should be *train.story-in-sequence.json*, *val.story-in-sequence.json*, *test.story-in-sequence.json* in `data/VIST-E/` and *image_id.jpg/png* in `data/VIST-E/images/`.
 
 Then, run
 

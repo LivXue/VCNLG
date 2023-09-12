@@ -6,7 +6,7 @@
 
 ![](https://img.shields.io/badge/Status-building-brightgreen)
 ![GitHub stars](https://img.shields.io/github/stars/LivXue/VCNLG?color=yellow&label=Stars)
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FLivXue%2FVCNLG&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FLivXue%2FVCNLG&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 ## Examples
   |   |   |
@@ -51,7 +51,7 @@ We adopt ViT pretrained by [BLIP](https://github.com/salesforce/BLIP) to extract
 
 Download *SIS-with-labels.tar.gz*, *train_split.(0-12).tar.gz*, *val_images.tar.gz*, *test_images.tar.gz*  and unzip them into `data/VIST-E`. 
 
-__Note:__ There should be *train.story-in-sequence.json*, *val.story-in-sequence.json*, *test.story-in-sequence.json* in `data/VIST-E/` and *image_id.jpg/png* in `data/VIST-E/images/`.
+__NOTE:__ There should be *train.story-in-sequence.json*, *val.story-in-sequence.json*, *test.story-in-sequence.json* in `data/VIST-E/` and *image_id.jpg/png* in `data/VIST-E/images/`.
 
 Then, run
 
@@ -76,7 +76,7 @@ python data/VIST-E/extract_clip_feature.py --input_dir data/VIST-E/images --outp
 ```
 to generate clip features.
 
-__Note:__ There should be *story_train.json*, *story_val.json*, *story_test.json* in `data/VIST-E/`, *<image_id>.npy* in `data/VIST-E/ViT_features/`, and *<image_id>.npy* in `data/VIST-E/clip_features/`.
+__NOTE:__ There should be *story_train.json*, *story_val.json*, *story_test.json* in `data/VIST-E/`, *<image_id>.npy* in `data/VIST-E/ViT_features/`, and *<image_id>.npy* in `data/VIST-E/clip_features/`.
 
 
 
@@ -86,7 +86,7 @@ Download LSMDC 2021 version (*task1_2021.zip*, *MPIIMD_downloadLinks.txt*, *MVAD
 
 __NOTE__: Due to LSMDC agreement, we cannot share data to any third-party.
 
-__Note:__ There should be *LSMDC16_annos_training_someone.csv*, *LSMDC16_annos_val_someone.csv*, *LSMDC16_annos_test_someone.csv*, *MPIIMD_downloadLinks.txt*, *MVADaligned_downloadLinks.txt* in `data/LSMDC-E/`.
+__NOTE:__ There should be *LSMDC16_annos_training_someone.csv*, *LSMDC16_annos_val_someone.csv*, *LSMDC16_annos_test_someone.csv*, *MPIIMD_downloadLinks.txt*, *MVADaligned_downloadLinks.txt* in `data/LSMDC-E/`.
 
 Then, merge *MPIIMD_downloadLinks.txt* and *MVADaligned_downloadLinks.txt* to a *download_video_urls.txt* file, modify the user name and password to LSMDC in `data/LSMDC-E/generate_clips.py` and run 
 
@@ -118,7 +118,7 @@ python data/LSMDC-E/extract_clip_feature_video.py --input_dir data/LSMDC-E/video
 ```
 to generate clip features.
 
-__Note:__ There should be *story_train.json*, *story_val.json*, *story_test.json* in `data/LSMDC-E/`, *<video_id>.npy* in `data/LSMDC-E/ViT_features/`, and *<video_id>.npy* in `data/LSMDC-E/clip_features/`.
+__NOTE:__ There should be *story_train.json*, *story_val.json*, *story_test.json* in `data/LSMDC-E/`, *<video_id>.npy* in `data/LSMDC-E/ViT_features/`, and *<video_id>.npy* in `data/LSMDC-E/clip_features/`.
 
 **3. (Optional) Fetch Textual Knowledge**
 

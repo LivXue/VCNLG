@@ -3,12 +3,9 @@ from __future__ import division
 from __future__ import print_function
 import argparse
 import json
-from glob import glob
 import os
 
-import numpy as np
 import operator
-import h5py
 from tqdm import tqdm
 
 from modules.gpt2.tokenization_gpt2 import GPT2Tokenizer
@@ -87,9 +84,6 @@ def story_pro(annotations, images):
 
             story_list = [(story1, order1), (story2, order2), (story3, order3), (story4, order4), (story5, order5)]
             story_list = sorted(story_list, key=operator.itemgetter(1))
-            #ordered_stories_four = [story_list[0][0], story_list[1][0], story_list[2][0], story_list[3][0]]
-            #stories_context = ' '.join(ordered_stories_four)
-            #ordered_stories_last = story_list[4][0]
             story[split].append({'story_id': story_id,
                                  'sent1': story_list[0][0],
                                  'sent2': story_list[1][0],

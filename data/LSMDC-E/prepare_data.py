@@ -5,8 +5,6 @@ import os
 import csv
 
 import numpy as np
-import h5py
-from stanfordcorenlp import StanfordCoreNLP
 from tqdm import tqdm
 
 from modules.gpt2.tokenization_gpt2 import GPT2Tokenizer

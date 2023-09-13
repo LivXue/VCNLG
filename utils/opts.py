@@ -32,7 +32,7 @@ def parse_opt():
     # feature manipulation
     parser.add_argument('--use_box', type=bool, default=False,
                         help='If use box features')
-    parser.add_argument('--use_know', type=bool, default=False,
+    parser.add_argument('--use_know', type=bool, default=True,
                         help='If use knowledge features')
 
     # Optimization: General
@@ -77,7 +77,7 @@ def parse_opt():
     parser.add_argument('--finetuning', type=int, default=5,
                         help='Beginning epoch of finetuning, -1 means never.')
 
-    parser.add_argument('--reinforce_st_epoch', type=int, default=-1,
+    parser.add_argument('--reinforce_st_epoch', type=int, default=5,
                         help='Beginning epoch of reinforce learning, -1 means never.')
 
     # misc

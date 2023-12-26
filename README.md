@@ -133,7 +133,7 @@ python mPLUG-Owl/test_onshot.py
 to retrieve knowledge for the datasets.
 
 
-## Training and test
+## Training and Test
 Check the configs in `utils/opts.py` and run 
 
 ```bash

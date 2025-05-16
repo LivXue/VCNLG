@@ -1,4 +1,4 @@
-# Vision-Controllable Natural Language Generation
+# Vision-Controllable Language Model for Image-guided Story Ending Generation
 
 [Dizhan Xue](https://scholar.google.com/citations?user=V5Aeh_oAAAAJ), [Shengsheng Qian](https://scholar.google.com/citations?user=bPX5POgAAAAJ), and [Changsheng Xu](https://scholar.google.com/citations?user=hI9NRDkAAAAJ).
 
@@ -19,7 +19,7 @@
 
 
 ## Introduction
-- Vision-Controllable Natural Language Generation (VCNLG) aims to continue natural language generation (NLG) following a peceived visual control. 
+- Image-guided Story Ending Generation (IgSEG) aims to continue natural language generation (NLG) following a peceived visual control. 
 - Vision-Controllable Language Model (VCLM) aligns a frozen vsiual encoder from BLIP, a frozen textual encoder BERT, and a trained-from-scratch or pretrained generative language model (LM).
 - VCLM adopt a (optional) multimodal-contextual cloud knowledge retrieval to improve edge computing AI when additional knowledge is needed.
 - VCLM adopt vision-controlled reinforcement learning to constrain the trained model to follow visual controls.
